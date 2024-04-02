@@ -204,8 +204,8 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .burger a i {
-    font-size: 40px;
+  .bx {
+    font-size: 42px;
   }
   .active {
     width: 320px;
