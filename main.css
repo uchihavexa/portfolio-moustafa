@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #faf3e0; /* Lightest color from palette */
+  color: #6d6875; /* Text color */
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 5%; /* Adjusted padding for responsiveness */
+  background-color: #c6d8af; /* First lightest color from palette */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  color: #6d6875; /* Text color */
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  font-size: 16px;
+  color: #6d6875; /* Text color */
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #d74b76; /* Accent color from palette */
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content vertically */
+  text-align: center;
+  padding: 80px 5%; /* Adjusted padding for responsiveness */
+  background: linear-gradient(
+    to left,
+    #82aae3,
+    #91d8e4,
+    #bfeaf5,
+    #eafdfc
+  ); /* Gradient from palette */
+  color: #6d6875; /* Text color */
+}
+
+.home-content {
+  width: 100%; /* Ensure content takes full width */
+  max-width: 600px; /* Limit content width */
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.home-content h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  white-space: nowrap;
+  color: #000; /* Accent color from palette */
+}
+
+.home-content h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #d74b76; /* Accent color from palette */
+}
+
+.home-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #82aae3;
+}
+
+.home-sci {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-sci a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #f9dcc4; /* Second lightest color from palette */
+  border-radius: 50%;
+  font-size: 20px;
+  color: #d74b76; /* Accent color from palette */
+  text-decoration: none;
+  margin: 0 8px;
+  transition: background-color 0.3s ease;
+}
+
+.home-sci a:hover {
+  background-color: #ffaf45; /* Accent color from palette */
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #6d6875; /* Text color */
+  color: #ffffff; /* White text */
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  margin-top: 4%;
+}
+
+.btn:hover {
+  background-color: #ffaf45; /* Accent color from palette */
+}
+
+.profile-img {
+  width: 100%; /* Ensure image takes full width */
+  max-width: 200px; /* Limit image width */
+  height: 100%;
+  border-radius: 50%;
+}
+
+.profile-picture {
+  display: flex;
+  justify-content: center;
+  width: 10%; /* Ensure picture takes full width */
+  background-color: #fff;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 0 0 5px #d74b76;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.burger {
+  display: none;
+}
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 8% 0;
+    justify-content: space-evenly;
+  }
+  .home {
+    padding: 80px 10%; /* Adjusted padding for larger screens */
+  }
+  .profile-picture {
+    margin-top: 80px;
+    min-width: 50%;
+  }
+  .home-content {
+    max-width: 800px; /* Adjusted max-width for larger screens */
+  }
+  .home-content h1 {
+    margin-top: 2%;
+    font-size: 20px; /* Adjusted font size for larger screens */
+  }
+  .navbar {
+    display: none;
+  }
+  .burger {
+    display: block;
+    background-color: #d74b76;
+  }
+  .burger a {
+    width: 40px;
+    height: 40px;
+    /* Second lightest color from palette */
+
+    font-size: 20px;
+    color: #000; /* Accent color from palette */
+    text-decoration: none;
+    margin: 0 8px;
+    transition: background-color 0.3s ease;
+  }
+  .active {
+    width: 320px;
+    height: 400px;
+    background-color: #d74b76;
+    flex-direction: column;
+  }
+}
