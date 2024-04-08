@@ -184,7 +184,7 @@ body {
   }
   .burger {
     display: block;
-    background-color: #d74b76;
+    background-color: #ffaf45;
     width: 10%;
     height: 50px;
     display: flex;
@@ -195,22 +195,43 @@ body {
     width: 100%;
     /* Second lightest color from palette */
     height: 100%;
-    font-size: 20px;
+    font-size: 18px;
     color: #000; /* Accent color from palette */
     text-decoration: none;
-    margin: 0 8px;
+    margin-bottom: 15px;
     transition: background-color 0.3s ease;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .bx {
-    font-size: 42px;
+  .burger a i {
+    font-size: 40px;
   }
   .active {
     width: 320px;
     height: 400px;
     background-color: #d74b76;
     flex-direction: column;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .navbar.active {
+    display: flex;
+    background-color: #d8e2dc; /* A slightly different background color */
+    transition: all 0.3s ease-in-out; /* Adding a transition */
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    justify-content: center;
+    height: 260px;
+    align-items: center;
+  }
+  .navbar.active a {
+    margin-bottom: 2%;
+    font-size: large;
+    font-stretch: wider;
+    font-weight: 500;
+    text-transform: uppercase;
   }
 }
